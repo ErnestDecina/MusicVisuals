@@ -16,4 +16,4 @@ public abstract class VisualAbstractClass extends PApplet {
 
     public void drawVisual() {};
     private void loadRenderObjects() {};
-}
+} // End abstract class VisualAbstractClass 

@@ -14,7 +14,6 @@ public class FlyingThroughSound extends DrawObjectAbstractClass {
         this.fft = fft;
     } // End FlyingThroughSound Constructor
 
-
     public void render() {
         drawWaveformMoving();
     } // End void render()
@@ -36,10 +35,7 @@ public class FlyingThroughSound extends DrawObjectAbstractClass {
             // pApplet.line((bufferIndex * rectangleWidth), windowHeight, (bufferIndex * rectangleWidth), windowHeight - fft.getBand(bufferIndex) * 5.0f);
         } // End for
 
-
         pApplet.popMatrix();
         pApplet.popStyle();
     } // End void drawWaveformMoving()
-
-
 } // End class FlyingThroughSound

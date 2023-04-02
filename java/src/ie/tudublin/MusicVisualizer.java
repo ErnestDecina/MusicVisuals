@@ -22,7 +22,7 @@ public class MusicVisualizer extends PApplet {
     Visual1 visual1;
     //
     Visual2 visual2;
-    //
+    // 
     Visual3 visual3;
     //
     Visual4 visual4;

@@ -7,6 +7,8 @@ import ddf.minim.analysis.FFT;
 import ie.tudublin.DrawObjectAbstractClass;
 import ie.tudublin.VisualAbstractClass;
 import processing.core.PApplet;
+import processing.core.PImage;
+
 import java.util.ArrayList;
 
 
@@ -35,6 +37,9 @@ public class Visual2 extends VisualAbstractClass {
         this.windowHeight = windowHeight;
         this.fft = new FFT(2048, 44100);
 
+        pApplet.color(windowHeight);
+        PImage i = new PImage();
+        i.get
         drawObjects = new ArrayList<DrawObjectAbstractClass>();
         loadRenderObjects();
     } // End Visual2 Constructor

@@ -60,12 +60,13 @@ public class MusicVisualizer extends PApplet {
         frameRate(60);
         loadSong();
         loadVisuals();
-        
     } // End void setup()
 
     public void draw() {
         background(0);
+
         playVisuals();
+
     } // End void draw()
 
 
@@ -87,21 +88,24 @@ public class MusicVisualizer extends PApplet {
         this.visual1 = new Visual1(this, this.audioBuffer, this.audioPlayer, this.windowWidth, this.windowHeight);
         this.visual4 = new Visual4(this, this.audioBuffer, this.audioPlayer, this.windowWidth, this.windowHeight);
 
+        visualList.add(visual3);
         visualList.add(visual2);
-        visualList.add(visual2);
-        visualList.add(visual2);
-        visualList.add(visual2);
-        visualList.add(visual2);
-
+        visualList.add(visual4);
+        visualList.add(visual1);
+        visualList.add(visual1);
     } // End void loadVisuals
 
-    private void playVisuals() {
+    private void playVisuals() 
+    {
+
         currentTime = audioPlayer.position();
+        
         System.out.println((float)currentTime / 100);
         if(currentTime / 100 > timings[timingsCounter]) 
             timingsCounter++;
         
         visualList.get(timingsCounter).drawVisual();
+
     } // End void playVisual
 
 } // End class MusicVisualizer

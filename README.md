@@ -1,4 +1,4 @@
-# Project Title
+# Music Visualizer
 
 Name:
 	Ron Syhmon Pingol,
